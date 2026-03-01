@@ -72,7 +72,7 @@ Part 4. 트러블슈팅에서는 개발 과정에서 발생한 성능 문제를 
 
 ## MidBoss AI 시스템
 
-<img src="docs/EnhancementGIF.gif" width="800">
+![img_5.png](docs/EnhancementGIF.gif)
 
 > 플레이어가 투척 오브젝트를 던지면 착지 지점에서 소음이 발생하고, NoiseDetectionGaugeManager의 게이지가 상승합니다.
 > 게이지가 임계값을 넘으면 MidBoss가 소음원 방향으로 돌진하여 경로 상의 문/환경물을 파괴하고, 충돌 대상에 따라 기절 → 콤보 연속 돌진으로 분기합니다.
@@ -123,7 +123,7 @@ MidBoss 소음 감지와 연동되는 투척 시스템을 상속 계층 + 인터
 
 **GlassBottle** — 던지기 → 착지 시 즉시 게이지 +80
 
-<img src="docs/GlassBottle.gif" width="800">
+![img_4.png](docs/GlassBottle.gif)
 
 **TimerLure** — 마우스 휠로 1~10초 타이머 조절 → 던지기 → 시간 경과 후 소음 시작(+30/초)
 
