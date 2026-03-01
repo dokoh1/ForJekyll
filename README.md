@@ -29,7 +29,7 @@
 
 # 개요
 
-[![ForJekylls 게임 트레일러](https://img.youtube.com/vi/6MY5yt9QY4k/0.jpg)](https://www.youtube.com/watch?v=6MY5yt9QY4k)
+<a href="https://www.youtube.com/watch?v=6MY5yt9QY4k"><img src="https://img.youtube.com/vi/6MY5yt9QY4k/0.jpg" width="800"></a>
 
 ## 소개
 
@@ -72,7 +72,7 @@ Part 4. 트러블슈팅에서는 개발 과정에서 발생한 성능 문제를 
 
 ## MidBoss AI 시스템
 
-![MidBoss AI GIF](docs/EnhancementGIF.gif)
+<img src="docs/EnhancementGIF.gif" width="800">
 
 > 플레이어가 투척 오브젝트를 던지면 착지 지점에서 소음이 발생하고, NoiseDetectionGaugeManager의 게이지가 상승합니다.
 > 게이지가 임계값을 넘으면 MidBoss가 소음원 방향으로 돌진하여 경로 상의 문/환경물을 파괴하고, 충돌 대상에 따라 기절 → 콤보 연속 돌진으로 분기합니다.
@@ -88,7 +88,7 @@ Part 4. 트러블슈팅에서는 개발 과정에서 발생한 성능 문제를 
 
 ## 파괴 가능 환경 시스템
 
-![파괴 가능 환경 시스템](docs/Enviroment.gif)
+<img src="docs/Enviroment.gif" width="800">
 
 MidBoss 돌진 시 경로 상의 환경물을 파괴하는 시스템입니다. `IBreakableEnvironment` 인터페이스로 파괴 가능 오브젝트를 추상화하고, 오브젝트 유형별로 파괴 방식을 다르게 구현했습니다.
 
@@ -123,19 +123,19 @@ MidBoss 소음 감지와 연동되는 투척 시스템을 상속 계층 + 인터
 
 **GlassBottle** — 던지기 → 착지 시 즉시 게이지 +80
 
-![GlassBottle](docs/GlassBottle.gif)
+<img src="docs/GlassBottle.gif" width="800">
 
 **TimerLure** — 마우스 휠로 1~10초 타이머 조절 → 던지기 → 시간 경과 후 소음 시작(+30/초)
 
-![TimerLure](docs/Timer.gif)
+<img src="docs/Timer.gif" width="800">
 
 **BrokenTimerLure** — 줍는 순간 즉시 소음 발생
 
-![BrokenTimerLure](docs/BrokenTimer.gif)
+<img src="docs/BrokenTimer.gif" width="800">
 
 ## 퀘스트 내비게이션
 
-![Objective Indicator](docs/ObjectIndicator.gif)
+<img src="docs/ObjectIndicator.gif" width="800">
 
 4슬롯 Objective Indicator로 다음 목적지를 시각적으로 안내합니다.
 화면 내 → World Marker, 화면 밖 → Edge Indicator로 자동 전환.
@@ -144,7 +144,7 @@ Tutorial~Chapter4_1까지 전 씬에 걸쳐 퀘스트 플로우에 맞춰 마커
 
 ## MidBoss Runtime Inspector
 
-![MidBoss Runtime Inspector](docs/Editor.png)
+<img src="docs/Editor.png" width="800">
 
 Unity IMGUI API(`EditorGUILayout`, `GUI.backgroundColor`, `GUILayoutUtility.GetRect`, `EditorGUI.DrawRect`)로 Custom Editor를 구현했습니다. Play 모드에서만 표시되며, `RequiresConstantRepaint()`로 매 프레임 갱신됩니다.
 
@@ -173,7 +173,7 @@ Unity IMGUI API(`EditorGUILayout`, `GUI.backgroundColor`, `GUILayoutUtility.GetR
 
 ## MidBoss BT 구조
 
-![MidBoss Behaviour Tree](docs/midboss_bt.png)
+<img src="docs/midboss_bt.png" width="800">
 
 ```
 Root
@@ -250,7 +250,7 @@ public void OnChargeHit(Collider other, Vector3 hitPoint, Vector3 hitNormal)
 
 MidBoss가 크레이트를 파괴할 때 **눈에 띄는 프레임 드랍**이 발생했습니다. 이 문제를 해결하는 과정에서 3번의 가설-검증을 거쳤습니다.
 
-![Profiler 스크린샷](docs/Profiler.png)
+<img src="docs/Profiler.png" width="800">
 
 ---
 
